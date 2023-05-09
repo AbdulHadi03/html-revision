@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Revision</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      nav {
+        background-color: bisque;
+        padding: 0.5%;
+        text-transform: uppercase;
+      }
+      ul {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        padding-left: 1%;
+      }
+      li {
+        display: inline;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- h1 tag usage -->
+
+    <header>
+      <h1>Html Revision</h1>
+      <nav>
+        <ul>
+          <li><a href="">What is html?</a></li>
+          <li><a href="">What are tables and how to use them?</a></li>
+          <li><a href="">What are forms and sample</a></li>
+          <li><a href="#maps">Google maps</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="tab">
+      <!-- tables -->
+      <h2>Table Demonstration</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>hi</th>
+            <th rowspan="2">hi</th>
+            <th rowspan="2">hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">hi</td>
+            <td colspan="2">hi</td>
+          </tr>
+          <tr>
+            <td colspan="2">hi</td>
+          </tr>
+          <tr>
+            <td colspan="2">hi</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="formDemo">
+      <h2>Form Demonstration</h2>
+      <form action="http://codehelp.in/">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name" />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="maps">
+      <h2>Use of iframe and Google Maps</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.4005538501765!2d78.0399535150506!3d27.175144783015206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2ssa!4v1683648766306!5m2!1sen!2ssa"
+        width="300"
+        height="220"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+  </body>
+</html>
